@@ -32,7 +32,6 @@ RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --n
 COPY nuget.exe C:\
 COPY start.bat C:\
 COPY install_dev.ps1 C:\
-COPY install_apps.ps1 C:\
 	
 # Use developer command prompt and start PowerShell if no other command specified.
 ENTRYPOINT start.bat &&
