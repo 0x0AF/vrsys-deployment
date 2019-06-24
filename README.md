@@ -57,6 +57,14 @@ where -m20g allows the use of 20Gb RAM.
 
 ```C:\install_dev.ps1```
 
+If required, the script can be ran partially, normally in the following order:
+
+```C:\pull_dependencies.ps1``` (get the latest state of dependencies)
+
+```C:\pull_repositories.ps1``` (get the latest state of repositories)
+
+```C:\build_repositories.ps1``` (make BUILD and INSTALL targets of the application stack)
+
 - After the script is finished, exit the container. The application stack should be available natively at ```C:\dev\rep\```
 
 ### Post-build Instructions
