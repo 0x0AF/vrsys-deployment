@@ -80,7 +80,7 @@ foreach ($file in $files)
 
 foreach ($file in $files)
 { 
-  if (Test-Path "c:\dev\rep\avango\build") {
+  if (Test-Path $($file.Directory.Parent.FullName+'\data')) {
       $('Making data link in '+$file.Directory.FullName+'...')
   
       New-Item -Path $($file.Directory.FullName+'\data') -ItemType SymbolicLink -Value $($file.Directory.Parent.FullName+'\data')
