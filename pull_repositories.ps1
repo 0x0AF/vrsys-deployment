@@ -19,7 +19,7 @@ $env:Path += ";C:\dev\dep\7-Zip.x64.16.02.1\tools"
 
 cd c:\dev\rep
 if (!(Test-Path "c:\dev\rep\lamure")) {
-git clone https://github.com/0x0AF/lamure
+git clone https://github.com/vrsys/lamure
 cd c:\dev\rep\lamure
 } else {
 cd c:\dev\rep\lamure
@@ -28,7 +28,7 @@ git pull origin master
 
 cd c:\dev\rep
 if (!(Test-Path "c:\dev\rep\guacamole")) {
-git clone https://github.com/0x0AF/guacamole
+git clone https://github.com/vrsys/guacamole
 cd c:\dev\rep\guacamole
 } else {
 cd c:\dev\rep\guacamole
@@ -37,7 +37,7 @@ git pull origin master
 
 cd c:\dev\rep
 if (!(Test-Path "c:\dev\rep\avango")) {
-git clone https://github.com/0x0AF/avango
+git clone https://github.com/vrsys/avango
 cd c:\dev\rep\avango
 } else {
 cd c:\dev\rep\avango

@@ -32,7 +32,7 @@ mkdir externals_versioning
 
 cd c:\dev\rep\externals_versioning
 if (!(Test-Path "c:\dev\rep\externals_versioning\lamure-externals")) {
-git clone https://github.com/0x0AF/lamure-externals
+git clone https://github.com/vrsys/lamure-externals
 } else {
 cd c:\dev\rep\externals_versioning\lamure-externals
 git pull origin master
@@ -55,7 +55,7 @@ mkdir externals_versioning
 
 cd c:\dev\rep\externals_versioning
 if (!(Test-Path "c:\dev\rep\externals_versioning\guacamole-externals")) {
-git clone https://github.com/0x0AF/guacamole-externals
+git clone https://github.com/vrsys/guacamole-externals
 } else {
 cd c:\dev\rep\externals_versioning\guacamole-externals
 git pull origin master
@@ -76,7 +76,7 @@ mkdir externals_versioning
 
 cd c:\dev\rep\externals_versioning
 if (!(Test-Path "c:\dev\rep\externals_versioning\avango-externals")) {
-git clone https://github.com/0x0AF/avango-externals
+git clone https://github.com/vrsys/avango-externals
 } else {
 cd c:\dev\rep\externals_versioning\avango-externals
 git pull origin master

@@ -89,9 +89,12 @@ foreach ($file in $files)
 
 foreach ($file in $files)
 {
-  $('Simlinking executable folder '+$file.Directory.FullName+'...')
+  $('Making shortcut to executable '+$file.FullName+'...')
   
-  New-Item -Path $('C:\dev\rep\guacamole\install\bin\Release\' + $file.Directory.Parent.Name) -ItemType SymbolicLink -Value $file.Directory.FullName
+  $WshShell = New-Object -comObject WScript.Shell
+  $Shortcut = $WshShell.CreateShortcut($('C:\dev\rep\guacamole\install\bin\Release\' + $file.Directory.Parent.Name + '.lnk'))
+  $Shortcut.TargetPath = $file.Directory.FullName
+  $Shortcut.Save()
 }
 
 cd c:\dev\rep\avango
